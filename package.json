@@ -1,0 +1,13 @@
+{
+  "name": "KwikMaffs",
+  "version": "1.0.0",
+  "description": "simple math things",
+  "main": "kwikMaffs.ts",
+  "author": "sslukess",
+  "license": "MIT",
+  "module": "kwikMaffs.ts",
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "noEmit": false,
+        "allowImportingTsExtensions": true,
+        "lib": ["es2015", "dom"],
+    }
+  }
