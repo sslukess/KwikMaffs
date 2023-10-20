@@ -44,7 +44,7 @@ const roundArray = (digitArray: string[], p: number) => {
     roundArray(digitArray, p); // round the array again if we have not reached p 
 };
 
-const roundDecimal = (number: number, p: number) => {
+export const roundDecimal = (number: number, p: number) => {
 
     if (!Number.isInteger(p) || p < 0) return; // return if the precision is not an integer OR is less than 0
 
@@ -70,18 +70,6 @@ const roundDecimal = (number: number, p: number) => {
     return finalNumber;
 }
 
-// creat a class for kwikMaffs
-class KwikMaffs {
-
-    constructor() {
-        this.roundDecimal = this.roundDecimal.bind(this);
-    }
-    roundDecimal(number, p) {
-        roundDecimal(number, p);
-    }
-};
-
-export default KwikMaffs;
 
 
 

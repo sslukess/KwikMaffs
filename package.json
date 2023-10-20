@@ -2,12 +2,23 @@
   "name": "KwikMaffs",
   "version": "1.0.0",
   "description": "simple math things",
-  "main": "kwikMaffs.ts",
   "author": "sslukess",
   "license": "MIT",
-  "module": "kwikMaffs.ts",
+  "module": "/dist/index.js",
+  "files": [
+    "/dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "dependencies": {
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "KwikMaffs": "./KwikMaffs-v1.0.0.tgz"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "node demo/demo.js",
+    "build": "tsc"
   }
 }
