@@ -11,10 +11,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
-  "dependencies": {
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2",
-    "KwikMaffs": "./KwikMaffs-v1.0.0.tgz"
+  "devDependencies": {
+    "typescript": "^5.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
