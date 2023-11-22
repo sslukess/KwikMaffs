@@ -14,5 +14,3 @@ const rl = readline.createInterface({
     kwikMaffs.roundDecimal(number, 2);
     rl.close();
   });
-
-
