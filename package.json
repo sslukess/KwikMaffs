@@ -1,7 +1,7 @@
 {
   "name": "KwikMaffs",
   "version": "0.2.0",
-  "description": "simple math things",
+  "description": "simple math tings",
   "author": "sslukess",
   "license": "MIT",
   "module": "/dist/index.js",
