@@ -10,6 +10,7 @@ export class KwikMaffs {
         this.toDollars = this.toDollars.bind(this);
         this.cleanCents = this.cleanCents.bind(this);
     }
+    
     roundDecimal(number: number, p: number) {
         roundDecimal(number, p);
     }

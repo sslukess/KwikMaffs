@@ -1,6 +1,4 @@
-
-// import KwikMaffs from 'KwikMaffs';   
-import {KwikMaffs} from "../dist/index.js"; 
+import { KwikMaffs } from "../dist/index.js"; 
 import readline from 'readline';
 
 const kwikMaffs = new KwikMaffs();

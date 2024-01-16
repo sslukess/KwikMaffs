@@ -111,20 +111,7 @@ export const roundDecimal = (number: number, p: number) => {
     console.log(`The number ${numberString} returns ${reDecimalNumberRounded} when rounded to ${p} decimal places.`)
 
     return reDecimalNumberRounded;
-
-    // ---- 
-    // TODO remove this: 
-    // older version of the code, which did not round the whole number if the precision was for decimals
-
-    // roundArray(decimalArray, p);  // round the array 
-
-    // const roundedDecimalString = decimalArray.join(""); // turn the array back into a string
-    // const reunitedString = `${slicedWholeNumberString}.${roundedDecimalString}`; // put the whole number and the decimals back together
-    // const finalNumber = Number(reunitedString); // turn the string back into a number
-    // console.log(`The number ${numberString} returns ${finalNumber} when rounded to ${p} decimal places.`)
-
-    // return finalNumber;
-}
+};
 
 
 

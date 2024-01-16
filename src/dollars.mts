@@ -1,4 +1,3 @@
-
 export const roundDown = (num: number, precision: number) => {
     const factor = Math.pow(10, precision)
     return Math.floor(num * factor) / factor
