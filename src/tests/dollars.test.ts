@@ -1,4 +1,4 @@
-const { toCents, cleanCents, toDollars } = require('../src/dollars');
+import { toCents, cleanCents, toDollars } from '../dollars';
 
 // tests for Cent/Dollar conversion calculations 
 

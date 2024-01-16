@@ -1,4 +1,4 @@
-import { devLog } from "./utils/devLog.js";
+import { devLog } from "./utils/devLog";
 
 const handleTenOnRound = (digitArray: string[], d: number, p: number, digitsAdded: number) => {
 
@@ -115,7 +115,7 @@ const roundDecimal = (number: number, p: number) => {
     return reDecimalNumberRounded;
 };
 
-module.exports = roundDecimal;
+export { roundDecimal };
 
 
 

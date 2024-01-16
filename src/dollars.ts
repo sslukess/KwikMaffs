@@ -46,9 +46,4 @@ const toDollars = (num: number | null) => {
     return cleanCents(num) / 100;
 };
 
-module.exports = {
-    roundDown,
-    cleanCents,
-    toCents,
-    toDollars
-};
+export { cleanCents, toCents, toDollars };
