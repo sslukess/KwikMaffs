@@ -1,5 +1,5 @@
-import { roundDecimal } from './roundDecimal.mjs';
-import { toCents, toDollars, cleanCents } from './dollars.mjs';
+const roundDecimal = require('./roundDecimal.mjs');
+const { toCents, toDollars, cleanCents } = require('./dollars.mjs');
 
 // create a class for kwikMaffs
 export class KwikMaffs {

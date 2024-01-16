@@ -1,13 +1,13 @@
-export const roundDown = (num: number, precision: number) => {
+const roundDown = (num: number, precision: number) => {
     const factor = Math.pow(10, precision)
     return Math.floor(num * factor) / factor
 };
 
 // this function is used to clean and trailing zeros off the cents after calculation 
-export const cleanCents = (num: number | null) => Math.floor(num || 0);
+const cleanCents = (num: number | null) => Math.floor(num || 0);
 
 // This function is used to convert all the dollar values to cents for more exact mathematical calculations
-export const toCents = (num: number | null) => {
+const toCents = (num: number | null) => {
 
     const zeroSafeNum = num || 0; // if the number is null, then we will just use 0
 
@@ -41,7 +41,14 @@ export const toCents = (num: number | null) => {
 };
 
 // this function converts back to dollars once we want to show the result. 
-export const toDollars = (num: number | null) => {
+const toDollars = (num: number | null) => {
     // clean the cents and then divide by 100 to get the dollar value
     return cleanCents(num) / 100;
+};
+
+module.exports = {
+    roundDown,
+    cleanCents,
+    toCents,
+    toDollars
 };
