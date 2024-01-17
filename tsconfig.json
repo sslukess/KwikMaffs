@@ -8,7 +8,7 @@
       "strict": true,
       "esModuleInterop": true,
       "rootDir": "src",
-      "moduleResolution": "nodenext",
+      "moduleResolution": "bundler",
     },
     "exclude": ["node_modules", "dist" ],
     "include": [
