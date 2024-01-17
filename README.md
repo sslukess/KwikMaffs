@@ -33,6 +33,7 @@ Examples assume you have created a new KwikMaffs called newKM, as per the Gettin
 ### Round Decimal
 
 This function is designed to round a decmial to a given precision, e.g. 
+
 ```const roundedNumber = newKM.roundDecimal(1.234, 2); // 1.23```
 
 in addition, it will bubble up the rounding if needed, e.g. 
@@ -45,7 +46,8 @@ When doing financial calculations, it is best practice to use cents (299c) in pl
 The toCents function will convert a floating dollar.cents number (e.g. $4.50), to a cents amount. 
 This might seem trivial (i.e. Math.floor(num * 100)), however due to some low level language features, it is not quite that simple. e.g.
 
-```16.99 * 100; // 1698.9999999999998
+```
+   16.99 * 100; // 1698.9999999999998
 
    // and 
    Math.floor(16.99 * 100); // 1698 cents?!
@@ -53,14 +55,16 @@ This might seem trivial (i.e. Math.floor(num * 100)), however due to some low le
 
 To address this, KwikMaffs supplies a reliable function to convert to cents, e.g. 
 
-``` const niceCents = newKM.toCents(16.99); // 1699
+``` 
+const niceCents = newKM.toCents(16.99); // 1699
 ```
 
 ### cleanCents
 
 Once we have converted all our numbers to cents, we want to stay in whole numbers. This function simple removes any floating point values (i.e. fractional cents) inbetween calculations, e.g.
 
- ```const costInCents = 1699; 
+ ```
+    const costInCents = 1699; 
 
     const costOverSevenWeeks = 1699 / 7; // 242.714285714285714 <- This is fractional cents
     const noFracCents = newKM.cleanCents(costOverSevenWeeks); // 242 
@@ -71,7 +75,8 @@ Once we have converted all our numbers to cents, we want to stay in whole number
 
 This function is the inverse of toCents, and is useful for displaying amounts to the user once the maths is all done, e.g. 
 
- ```const finalCostInCents = 3495; // cents
+```
+    const finalCostInCents = 3495; // cents
     const finalCostInDollars = newKM.toDollars(finalCostInCents); // 35.95 
 ```
 
