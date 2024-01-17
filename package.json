@@ -1,6 +1,6 @@
 {
   "name": "kwikmaffs",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "simple math tings",
   "author": "sslukess",
   "license": "MIT",
@@ -22,6 +22,6 @@
   "scripts": {
     "test": "jest",
     "demo": "node demo/demo.js",
-    "build": "tsc"
+    "build": "rm -rf ./dist && tsc"
   }
 }
