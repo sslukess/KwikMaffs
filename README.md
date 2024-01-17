@@ -21,9 +21,9 @@ The core concept is to address these issues via a string literal based solution 
 ## 🥨 Getting Started
 
 1. Add the package to your project with npm i kwikmaffs@latest
-2. import the kwikmaffs class: import KwikMaffs from 'kwikmaffs'; 
-3. Create a new instance of KwikMaffs: const newKM = new KwikMaffs(); 
-4. Package functions are now available on newKM: newKM.roundDecimal(1.2452, 3); 
+2. import the kwikmaffs class: ```import KwikMaffs from 'kwikmaffs';```
+3. Create a new instance of KwikMaffs: ```const newKM = new KwikMaffs();```
+4. Package functions are now available on newKM: ```newKM.roundDecimal(1.2452, 3);```
 
 ## 🫑 Features
 
