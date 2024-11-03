@@ -29,6 +29,7 @@ The core concept is to address these issues via a string literal based solution 
 
 The following functions are offered on the KwikMaffs class. 
 Examples assume you have created a new KwikMaffs called newKM, as per the Getting Started section.
+
 Note: The words 'dollars' and 'cents' are used in this document only for context. The code has no concept of an actual currency, so this can of course be used with any other fractional currencies, for example the Euro or the (Pound) Sterling. Or even with non-money calculations. 
 
 ### Round Decimal
