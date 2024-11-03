@@ -29,6 +29,7 @@ The core concept is to address these issues via a string literal based solution 
 
 The following functions are offered on the KwikMaffs class. 
 Examples assume you have created a new KwikMaffs called newKM, as per the Getting Started section.
+Note: The words 'dollars' and 'cents' are used in this document only for context. The code has no concept of an actual currency, so this can of course be used with any other fractional currencies, for example the Euro or the (Pound) Sterling. Or even with non-money calculations. 
 
 ### Round Decimal
 
@@ -42,8 +43,8 @@ in addition, it will bubble up the rounding if needed, e.g.
 
 ### toCents 
 
-When doing financial calculations, it is best practice to use cents (299c) in place of dollars ($2.99), as it allows the use of whole numebrs and avoids a whole class of potential errors. 
-The toCents function will convert a floating dollar.cents number (e.g. $4.50), to a cents amount. 
+When doing financial calculations, it is best practice to use whole numbers (299c) in place of fractional numbers ($2.99), as it allows the use of whole numbers and avoids a whole class of potential errors. 
+The toCents function will convert a floating dollar.cents number (e.g. $4.50), to a cents amount.
 This might seem trivial (i.e. Math.floor(num * 100)), however due to some low level language features, it is not quite that simple. e.g.
 
 ```
